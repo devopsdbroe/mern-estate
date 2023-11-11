@@ -76,7 +76,7 @@ const Profile = () => {
 						</span>
 					) : filePercentage > 0 && filePercentage < 100 ? (
 						<span className="text-slate-700">
-							{`Uploading ${filePercentage}`}
+							{`Uploading ${filePercentage}%`}
 						</span>
 					) : filePercentage === 100 ? (
 						<span className="text-green-700">Successfully Uploaded!</span>
