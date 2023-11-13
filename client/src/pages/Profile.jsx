@@ -1,5 +1,6 @@
 import { useRef, useState, useEffect } from "react";
 import { useSelector, useDispatch } from "react-redux";
+import { Link } from "react-router-dom";
 import {
 	getDownloadURL,
 	getStorage,
@@ -15,7 +16,6 @@ import {
 	deleteUserStart,
 	deleteUserSuccess,
 	signOutStart,
-	signInFailure,
 	signOutSuccess,
 	signOutFailure,
 } from "../redux/user/userSlice";
@@ -187,6 +187,12 @@ const Profile = () => {
 				>
 					{loading ? "Loading..." : "Update"}
 				</button>
+				<Link
+					to="/create-listing"
+					className="bg-green-700 text-white p-3 rounded-lg uppercase text-center hover:opacity-95"
+				>
+					Create listing
+				</Link>
 			</form>
 			<div className="flex justify-between mt-5">
 				<span
