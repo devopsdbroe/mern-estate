@@ -196,7 +196,7 @@ const CreateListing = () => {
 								onChange={handleChange}
 								checked={formData.type === "sale"}
 							/>
-							<span>Sell</span>
+							<span>Sale</span>
 						</div>
 						<div className="flex gap-2">
 							<input
