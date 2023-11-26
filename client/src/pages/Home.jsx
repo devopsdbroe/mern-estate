@@ -19,18 +19,11 @@ const Home = () => {
 		const fetchOfferListings = async () => {
 			try {
 				const res = await fetch("/api/listing/get?offer=true&limit=4");
-				if (!res.ok) {
-					throw new Error(`HTTP error! Status: ${res.status}`);
-				}
-				const contentType = res.headers.get("content-type");
-				if (!contentType || !contentType.includes("application/json")) {
-					throw new Error("Received non-JSON response");
-				}
 				const data = await res.json();
 				setOfferListings(data);
 				fetchRentListings();
 			} catch (error) {
-				console.error("Error fetching offer listings:", error);
+				console.log(error);
 			}
 		};
 
