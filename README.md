@@ -95,33 +95,26 @@ node -e "console.log(require('crypto').randomBytes(32).toString('hex'))"
 ### Get Firebase API Key and Configure OAuth Authentication
 
 Step 1: Set Up Firebase in Your Application
-1.1 Create a Firebase Project
 
 - Go to the Firebase Console.
 - Click on "Add project", and follow the instructions to create a new Firebase project.
 
-  1.2 Register Your App
+Step 2: Register Your App
 
 - In the Firebase console, open your project.
 - Click on the "Web" icon (</>) to register your app.
 - Follow the steps, enter your app's nickname, and register the app.
 
-  1.3 Add Firebase SDK
+Step 3: Get API Key and add to .env file
 
 - After registering your app, you'll be provided with a script snippet to add Firebase to your web app. You'll only need to copy the apiKey value and add it to VITE_FIREBASE_API_KEY
 
-Step 2: Enable OAuth Providers
+Step 4: Enable OAuth Providers
 
 - In the Firebase Console, go to the "Authentication" section and select the "Sign-in method" tab.
 - Enable the providers you want to use (Google, Facebook, etc.) by clicking on them and filling in the required fields such as app ID and secret. For my app, I only used Google authentication.
 
-### Start the app
-
-```shell
-npm run dev
-```
-
-## Available commands
+## Start the Server and Application
 
 You can start the node server using `npm run dev` from the `mern-estate` folder
 
