@@ -1,5 +1,7 @@
 # Fullstack Real Estate Application: React, MongoDB, Express, Node.js
 
+![MERN Estate Thumbnail](https://github.com/devopsdbroe/mern-estate/blob/main/mernestate.png)
+
 This repository is for a Fullstack Real Estate Application built using the MERN development stack, designed to facilitate property listings, searches, and user interactions within a real estate context.
 
 Key Features:
