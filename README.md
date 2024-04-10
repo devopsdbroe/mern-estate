@@ -35,13 +35,13 @@ npm i
 ### Setup 2 .env files
 
 ```js
-// This goes at the top level
+// Located at the root level
 MONGO_URI=
 JWT_SECRET=
 ```
 
 ```js
-// This goes inside of the "client" folder
+// Located inside of "client" folder
 VITE_FIREBASE_API_KEY=
 ```
 
